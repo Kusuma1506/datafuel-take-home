@@ -1,4 +1,4 @@
-# datafuel-take-home
+
 # DataFuel QuickMart OSA Take-home
 
 This project implements a resilient scraper for the QuickMart mock API and a FastAPI endpoint that reports on-shelf availability (`/osa`) for a city and IST date.

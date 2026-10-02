@@ -1,38 +1,51 @@
-# QuickMart DataFuel take-home
+# DataFuel QuickMart OSA Take-home
 
-This repo contains a safe scraper for the QuickMart API, an idempotent SQLite database, and a FastAPI report endpoint for `/osa`.
+This project implements a resilient scraper for the QuickMart mock API and a FastAPI endpoint that reports on-shelf availability (`/osa`) for a city and IST date.
 
-## Setup
+## Overview
 
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS / Linux
-# source venv/bin/activate
+- Scraper: `sweep.py`
+- API: `app.py`
+- SQLite database: `osa.db`
+- Tests: `tests/`
+- Review: `REVIEW.md`
+- Notes: `NOTES.md`
+- AI log: `AI_LOG.md`
 
+## Setup on Windows
+
+```powershell
+cd "c:\Users\KUSUMA\Downloads\datafuel-take-home (1)\candidate"
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+& ".venv\Scripts\Activate.ps1"
 python -m pip install -r requirements.txt
 ```
 
 ## Start the mock server
 
-In one terminal:
+Open one terminal and run:
 
-```bash
+```powershell
+cd "c:\Users\KUSUMA\Downloads\datafuel-take-home (1)\candidate"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+& ".venv\Scripts\Activate.ps1"
 python mock_portal.py
 ```
 
-If port 8765 is busy:
+If port 8765 is already in use, start on another port:
 
-```bash
+```powershell
 $env:PORT=9000; python mock_portal.py
 ```
 
-Then use port 9000 everywhere below.
+## Run the six required sweeps
 
-## Run the sweeps
+```powershell
+cd "c:\Users\KUSUMA\Downloads\datafuel-take-home (1)\candidate"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+& ".venv\Scripts\Activate.ps1"
 
-```bash
 python sweep.py --as-of 2026-09-27T04:30:00Z
 python sweep.py --as-of 2026-09-27T10:30:00Z
 python sweep.py --as-of 2026-09-27T19:00:00Z
@@ -41,39 +54,39 @@ python sweep.py --as-of 2026-09-28T10:30:00Z
 python sweep.py --as-of 2026-09-28T18:40:00Z
 ```
 
-The script writes to `osa.db` and keeps output idempotent.
+## Start the API
 
-## Start the report API
+Open a second terminal and run:
 
-```bash
-uvicorn app:app --host 127.0.0.1 --port 8000
+```powershell
+cd "c:\Users\KUSUMA\Downloads\datafuel-take-home (1)\candidate"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+& ".venv\Scripts\Activate.ps1"
+python -m uvicorn app:app --host 127.0.0.1 --port 8001
 ```
 
-Then request:
+## Check the API manually
 
-```bash
-curl "http://127.0.0.1:8000/osa?city=Mumbai&date=2026-09-28"
-curl "http://127.0.0.1:8000/osa?city=Delhi"
-curl "http://127.0.0.1:8000/osa?city=Bengaluru"
+```powershell
+Invoke-WebRequest "http://127.0.0.1:8001/osa?city=Mumbai&date=2026-09-28" -UseBasicParsing
+Invoke-WebRequest "http://127.0.0.1:8001/osa?city=Delhi&date=2026-09-28" -UseBasicParsing
+Invoke-WebRequest "http://127.0.0.1:8001/osa?city=Bengaluru&date=2026-09-28" -UseBasicParsing
+Invoke-WebRequest "http://127.0.0.1:8001/osa?city=Paris" -UseBasicParsing
 ```
 
 ## Run tests
 
-```bash
+```powershell
+cd "c:\Users\KUSUMA\Downloads\datafuel-take-home (1)\candidate"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+& ".venv\Scripts\Activate.ps1"
 pytest -q
 ```
 
-## Notes
+## Notes on correctness
 
-- Only active stores are tracked for OSA reporting.
-- Incomplete store-sweeps are explicitly excluded from the OSA math and listed in `coverage.incomplete`.
-- The server is intentionally flaky; the scraper handles 429, slow requests, partial data, duplicates, soft bans, and mixed timezones without storing bad numbers.
+- Only active stores are tracked.
+- Incomplete store-sweeps are excluded from OSA calculations and included in `coverage.incomplete`.
+- The scraper handles rate limits, timeouts, retries, soft bans, partial snapshots, duplicate items, and mixed timestamp formats.
+- The API uses `in_stock` rather than `qty`, and date grouping is based on IST calendar days.
 
-  (If it won't even start, email us.)
-- **The brief doesn't say how to handle something.** Pick a sensible option, write it in
-  `NOTES.md`, move on.
-- **Can I look inside `mock_portal.py`?** Yes, you can read it, but build your code from
-  `API.md` and what you observe, as you would with a real app whose code you can't see.
-- **Do I need a camera?** No. Screen + voice is enough.
-- **I can't finish in time.** Submit what you have, with `NOTES.md` explaining what's left.
-- **Questions?** vansh@datafuel.tech. Asking is a good sign, not a bad one.

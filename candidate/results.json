@@ -1,0 +1,810 @@
+﻿{
+    "Mumbai":  {
+                   "city":  "Mumbai",
+                   "date":  "2026-09-28",
+                   "osa_pct":  86.06,
+                   "observations":  753,
+                   "coverage":  {
+                                    "stores_expected":  9,
+                                    "stores_complete":  9,
+                                    "incomplete":  [
+
+                                                   ]
+                                },
+                   "skus":  [
+                                {
+                                    "sku_id":  "SKU-0001",
+                                    "name":  "Amul Taaza Toned Milk 500 ml Pouch",
+                                    "observations":  21,
+                                    "in_stock":  21,
+                                    "osa_pct":  100.0
+                                },
+                                {
+                                    "sku_id":  "SKU-0002",
+                                    "name":  "Britannia Brown Bread 400g",
+                                    "observations":  21,
+                                    "in_stock":  18,
+                                    "osa_pct":  85.71
+                                },
+                                {
+                                    "sku_id":  "SKU-0003",
+                                    "name":  "Maggi 2-Minute Noodles 280g",
+                                    "observations":  21,
+                                    "in_stock":  19,
+                                    "osa_pct":  90.48
+                                },
+                                {
+                                    "sku_id":  "SKU-0004",
+                                    "name":  "Tata Salt 1kg",
+                                    "observations":  27,
+                                    "in_stock":  21,
+                                    "osa_pct":  77.78
+                                },
+                                {
+                                    "sku_id":  "SKU-0005",
+                                    "name":  "Aashirvaad Atta 5kg",
+                                    "observations":  21,
+                                    "in_stock":  18,
+                                    "osa_pct":  85.71
+                                },
+                                {
+                                    "sku_id":  "SKU-0006",
+                                    "name":  "Fortune Sunflower Oil 1L",
+                                    "observations":  21,
+                                    "in_stock":  19,
+                                    "osa_pct":  90.48
+                                },
+                                {
+                                    "sku_id":  "SKU-0007",
+                                    "name":  "Amul Butter 100g",
+                                    "observations":  21,
+                                    "in_stock":  18,
+                                    "osa_pct":  85.71
+                                },
+                                {
+                                    "sku_id":  "SKU-0008",
+                                    "name":  "Parle-G Biscuits 800g",
+                                    "observations":  15,
+                                    "in_stock":  15,
+                                    "osa_pct":  100.0
+                                },
+                                {
+                                    "sku_id":  "SKU-0009",
+                                    "name":  "Surf Excel Easy Wash 1kg",
+                                    "observations":  15,
+                                    "in_stock":  13,
+                                    "osa_pct":  86.67
+                                },
+                                {
+                                    "sku_id":  "SKU-0010",
+                                    "name":  "Colgate Strong Teeth 200g",
+                                    "observations":  18,
+                                    "in_stock":  17,
+                                    "osa_pct":  94.44
+                                },
+                                {
+                                    "sku_id":  "SKU-0011",
+                                    "name":  "Dettol Handwash 200ml",
+                                    "observations":  15,
+                                    "in_stock":  12,
+                                    "osa_pct":  80.0
+                                },
+                                {
+                                    "sku_id":  "SKU-0012",
+                                    "name":  "Lays Classic Salted 52g",
+                                    "observations":  18,
+                                    "in_stock":  16,
+                                    "osa_pct":  88.89
+                                },
+                                {
+                                    "sku_id":  "SKU-0013",
+                                    "name":  "Coca-Cola 750ml",
+                                    "observations":  15,
+                                    "in_stock":  13,
+                                    "osa_pct":  86.67
+                                },
+                                {
+                                    "sku_id":  "SKU-0014",
+                                    "name":  "Bisleri Water 1L",
+                                    "observations":  21,
+                                    "in_stock":  18,
+                                    "osa_pct":  85.71
+                                },
+                                {
+                                    "sku_id":  "SKU-0015",
+                                    "name":  "Haldiram Bhujia 200g",
+                                    "observations":  21,
+                                    "in_stock":  18,
+                                    "osa_pct":  85.71
+                                },
+                                {
+                                    "sku_id":  "SKU-0016",
+                                    "name":  "Nescafe Classic 50g",
+                                    "observations":  18,
+                                    "in_stock":  15,
+                                    "osa_pct":  83.33
+                                },
+                                {
+                                    "sku_id":  "SKU-0017",
+                                    "name":  "Tata Tea Gold 500g",
+                                    "observations":  24,
+                                    "in_stock":  22,
+                                    "osa_pct":  91.67
+                                },
+                                {
+                                    "sku_id":  "SKU-0018",
+                                    "name":  "Kissan Ketchup 950g",
+                                    "observations":  24,
+                                    "in_stock":  22,
+                                    "osa_pct":  91.67
+                                },
+                                {
+                                    "sku_id":  "SKU-0019",
+                                    "name":  "Mother Dairy Curd 400g",
+                                    "observations":  21,
+                                    "in_stock":  17,
+                                    "osa_pct":  80.95
+                                },
+                                {
+                                    "sku_id":  "SKU-0020",
+                                    "name":  "Epigamia Greek Yogurt 90g",
+                                    "observations":  18,
+                                    "in_stock":  14,
+                                    "osa_pct":  77.78
+                                },
+                                {
+                                    "sku_id":  "SKU-0021",
+                                    "name":  "Onion 1kg",
+                                    "observations":  21,
+                                    "in_stock":  15,
+                                    "osa_pct":  71.43
+                                },
+                                {
+                                    "sku_id":  "SKU-0022",
+                                    "name":  "Tomato 500g",
+                                    "observations":  21,
+                                    "in_stock":  18,
+                                    "osa_pct":  85.71
+                                },
+                                {
+                                    "sku_id":  "SKU-0023",
+                                    "name":  "Banana Robusta 6pc",
+                                    "observations":  18,
+                                    "in_stock":  16,
+                                    "osa_pct":  88.89
+                                },
+                                {
+                                    "sku_id":  "SKU-0024",
+                                    "name":  "Potato 1kg",
+                                    "observations":  24,
+                                    "in_stock":  21,
+                                    "osa_pct":  87.5
+                                },
+                                {
+                                    "sku_id":  "SKU-0025",
+                                    "name":  "Eggs Farm Fresh 6pc",
+                                    "observations":  24,
+                                    "in_stock":  23,
+                                    "osa_pct":  95.83
+                                },
+                                {
+                                    "sku_id":  "SKU-0026",
+                                    "name":  "Paneer Amul 200g",
+                                    "observations":  18,
+                                    "in_stock":  15,
+                                    "osa_pct":  83.33
+                                },
+                                {
+                                    "sku_id":  "SKU-0027",
+                                    "name":  "Dove Soap 3x100g",
+                                    "observations":  27,
+                                    "in_stock":  22,
+                                    "osa_pct":  81.48
+                                },
+                                {
+                                    "sku_id":  "SKU-0028",
+                                    "name":  "Harpic Toilet Cleaner 500ml",
+                                    "observations":  18,
+                                    "in_stock":  17,
+                                    "osa_pct":  94.44
+                                },
+                                {
+                                    "sku_id":  "SKU-0029",
+                                    "name":  "Vim Dishwash Gel 250ml",
+                                    "observations":  21,
+                                    "in_stock":  19,
+                                    "osa_pct":  90.48
+                                },
+                                {
+                                    "sku_id":  "SKU-0030",
+                                    "name":  "Pampers Pants M 20pc",
+                                    "observations":  24,
+                                    "in_stock":  21,
+                                    "osa_pct":  87.5
+                                },
+                                {
+                                    "sku_id":  "SKU-0031",
+                                    "name":  "Real Mixed Fruit Juice 1L",
+                                    "observations":  27,
+                                    "in_stock":  24,
+                                    "osa_pct":  88.89
+                                },
+                                {
+                                    "sku_id":  "SKU-0032",
+                                    "name":  "Kurkure Masala Munch 90g",
+                                    "observations":  18,
+                                    "in_stock":  15,
+                                    "osa_pct":  83.33
+                                },
+                                {
+                                    "sku_id":  "SKU-0033",
+                                    "name":  "Cadbury Dairy Milk Silk 60g",
+                                    "observations":  24,
+                                    "in_stock":  16,
+                                    "osa_pct":  66.67
+                                },
+                                {
+                                    "sku_id":  "SKU-0034",
+                                    "name":  "Red Bull 250ml",
+                                    "observations":  24,
+                                    "in_stock":  21,
+                                    "osa_pct":  87.5
+                                },
+                                {
+                                    "sku_id":  "SKU-0035",
+                                    "name":  "Too Yumm Multigrain Chips 54g",
+                                    "observations":  27,
+                                    "in_stock":  20,
+                                    "osa_pct":  74.07
+                                },
+                                {
+                                    "sku_id":  "SKU-0036",
+                                    "name":  "Sprite 750ml",
+                                    "observations":  21,
+                                    "in_stock":  19,
+                                    "osa_pct":  90.48
+                                }
+                            ],
+                   "status":  "ok"
+               },
+    "Delhi":  {
+                  "city":  "Delhi",
+                  "date":  "2026-09-28",
+                  "osa_pct":  79.63,
+                  "observations":  761,
+                  "coverage":  {
+                                   "stores_expected":  9,
+                                   "stores_complete":  9,
+                                   "incomplete":  [
+                                                      {
+                                                          "store_id":  "DEL-004",
+                                                          "sweep":  "2026-09-28T10:30:00Z",
+                                                          "reason":  "portal returned partial snapshot"
+                                                      }
+                                                  ]
+                               },
+                  "skus":  [
+                               {
+                                   "sku_id":  "SKU-0001",
+                                   "name":  "Amul Taaza Toned Milk 500 ml Pouch",
+                                   "observations":  14,
+                                   "in_stock":  12,
+                                   "osa_pct":  85.71
+                               },
+                               {
+                                   "sku_id":  "SKU-0002",
+                                   "name":  "Britannia Brown Bread 400g",
+                                   "observations":  17,
+                                   "in_stock":  12,
+                                   "osa_pct":  70.59
+                               },
+                               {
+                                   "sku_id":  "SKU-0003",
+                                   "name":  "Maggi 2-Minute Noodles 280g",
+                                   "observations":  18,
+                                   "in_stock":  14,
+                                   "osa_pct":  77.78
+                               },
+                               {
+                                   "sku_id":  "SKU-0004",
+                                   "name":  "Tata Salt 1kg",
+                                   "observations":  20,
+                                   "in_stock":  19,
+                                   "osa_pct":  95.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0005",
+                                   "name":  "Aashirvaad Atta 5kg",
+                                   "observations":  23,
+                                   "in_stock":  17,
+                                   "osa_pct":  73.91
+                               },
+                               {
+                                   "sku_id":  "SKU-0006",
+                                   "name":  "Fortune Sunflower Oil 1L",
+                                   "observations":  20,
+                                   "in_stock":  17,
+                                   "osa_pct":  85.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0007",
+                                   "name":  "Amul Butter 100g",
+                                   "observations":  23,
+                                   "in_stock":  20,
+                                   "osa_pct":  86.96
+                               },
+                               {
+                                   "sku_id":  "SKU-0008",
+                                   "name":  "Parle-G Biscuits 800g",
+                                   "observations":  17,
+                                   "in_stock":  13,
+                                   "osa_pct":  76.47
+                               },
+                               {
+                                   "sku_id":  "SKU-0009",
+                                   "name":  "Surf Excel Easy Wash 1kg",
+                                   "observations":  26,
+                                   "in_stock":  19,
+                                   "osa_pct":  73.08
+                               },
+                               {
+                                   "sku_id":  "SKU-0010",
+                                   "name":  "Colgate Strong Teeth 200g",
+                                   "observations":  26,
+                                   "in_stock":  24,
+                                   "osa_pct":  92.31
+                               },
+                               {
+                                   "sku_id":  "SKU-0011",
+                                   "name":  "Dettol Handwash 200ml",
+                                   "observations":  24,
+                                   "in_stock":  17,
+                                   "osa_pct":  70.83
+                               },
+                               {
+                                   "sku_id":  "SKU-0012",
+                                   "name":  "Lays Classic Salted 52g",
+                                   "observations":  20,
+                                   "in_stock":  16,
+                                   "osa_pct":  80.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0013",
+                                   "name":  "Coca-Cola 750ml",
+                                   "observations":  26,
+                                   "in_stock":  23,
+                                   "osa_pct":  88.46
+                               },
+                               {
+                                   "sku_id":  "SKU-0014",
+                                   "name":  "Bisleri Water 1L",
+                                   "observations":  24,
+                                   "in_stock":  20,
+                                   "osa_pct":  83.33
+                               },
+                               {
+                                   "sku_id":  "SKU-0015",
+                                   "name":  "Haldiram Bhujia 200g",
+                                   "observations":  26,
+                                   "in_stock":  19,
+                                   "osa_pct":  73.08
+                               },
+                               {
+                                   "sku_id":  "SKU-0016",
+                                   "name":  "Nescafe Classic 50g",
+                                   "observations":  26,
+                                   "in_stock":  18,
+                                   "osa_pct":  69.23
+                               },
+                               {
+                                   "sku_id":  "SKU-0017",
+                                   "name":  "Tata Tea Gold 500g",
+                                   "observations":  18,
+                                   "in_stock":  14,
+                                   "osa_pct":  77.78
+                               },
+                               {
+                                   "sku_id":  "SKU-0018",
+                                   "name":  "Kissan Ketchup 950g",
+                                   "observations":  23,
+                                   "in_stock":  18,
+                                   "osa_pct":  78.26
+                               },
+                               {
+                                   "sku_id":  "SKU-0019",
+                                   "name":  "Mother Dairy Curd 400g",
+                                   "observations":  20,
+                                   "in_stock":  15,
+                                   "osa_pct":  75.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0020",
+                                   "name":  "Epigamia Greek Yogurt 90g",
+                                   "observations":  23,
+                                   "in_stock":  18,
+                                   "osa_pct":  78.26
+                               },
+                               {
+                                   "sku_id":  "SKU-0021",
+                                   "name":  "Onion 1kg",
+                                   "observations":  20,
+                                   "in_stock":  16,
+                                   "osa_pct":  80.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0022",
+                                   "name":  "Tomato 500g",
+                                   "observations":  17,
+                                   "in_stock":  13,
+                                   "osa_pct":  76.47
+                               },
+                               {
+                                   "sku_id":  "SKU-0023",
+                                   "name":  "Banana Robusta 6pc",
+                                   "observations":  20,
+                                   "in_stock":  16,
+                                   "osa_pct":  80.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0024",
+                                   "name":  "Potato 1kg",
+                                   "observations":  9,
+                                   "in_stock":  9,
+                                   "osa_pct":  100.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0025",
+                                   "name":  "Eggs Farm Fresh 6pc",
+                                   "observations":  23,
+                                   "in_stock":  17,
+                                   "osa_pct":  73.91
+                               },
+                               {
+                                   "sku_id":  "SKU-0026",
+                                   "name":  "Paneer Amul 200g",
+                                   "observations":  23,
+                                   "in_stock":  20,
+                                   "osa_pct":  86.96
+                               },
+                               {
+                                   "sku_id":  "SKU-0027",
+                                   "name":  "Dove Soap 3x100g",
+                                   "observations":  23,
+                                   "in_stock":  18,
+                                   "osa_pct":  78.26
+                               },
+                               {
+                                   "sku_id":  "SKU-0028",
+                                   "name":  "Harpic Toilet Cleaner 500ml",
+                                   "observations":  23,
+                                   "in_stock":  13,
+                                   "osa_pct":  56.52
+                               },
+                               {
+                                   "sku_id":  "SKU-0029",
+                                   "name":  "Vim Dishwash Gel 250ml",
+                                   "observations":  20,
+                                   "in_stock":  18,
+                                   "osa_pct":  90.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0030",
+                                   "name":  "Pampers Pants M 20pc",
+                                   "observations":  20,
+                                   "in_stock":  18,
+                                   "osa_pct":  90.0
+                               },
+                               {
+                                   "sku_id":  "SKU-0031",
+                                   "name":  "Real Mixed Fruit Juice 1L",
+                                   "observations":  24,
+                                   "in_stock":  20,
+                                   "osa_pct":  83.33
+                               },
+                               {
+                                   "sku_id":  "SKU-0032",
+                                   "name":  "Kurkure Masala Munch 90g",
+                                   "observations":  23,
+                                   "in_stock":  16,
+                                   "osa_pct":  69.57
+                               },
+                               {
+                                   "sku_id":  "SKU-0033",
+                                   "name":  "Cadbury Dairy Milk Silk 60g",
+                                   "observations":  18,
+                                   "in_stock":  15,
+                                   "osa_pct":  83.33
+                               },
+                               {
+                                   "sku_id":  "SKU-0034",
+                                   "name":  "Red Bull 250ml",
+                                   "observations":  21,
+                                   "in_stock":  16,
+                                   "osa_pct":  76.19
+                               },
+                               {
+                                   "sku_id":  "SKU-0035",
+                                   "name":  "Too Yumm Multigrain Chips 54g",
+                                   "observations":  23,
+                                   "in_stock":  19,
+                                   "osa_pct":  82.61
+                               },
+                               {
+                                   "sku_id":  "SKU-0036",
+                                   "name":  "Sprite 750ml",
+                                   "observations":  20,
+                                   "in_stock":  17,
+                                   "osa_pct":  85.0
+                               }
+                           ],
+                  "status":  "ok"
+              },
+    "Bengaluru":  {
+                      "city":  "Bengaluru",
+                      "date":  "2026-09-28",
+                      "osa_pct":  89.57,
+                      "observations":  690,
+                      "coverage":  {
+                                       "stores_expected":  8,
+                                       "stores_complete":  8,
+                                       "incomplete":  [
+
+                                                      ]
+                                   },
+                      "skus":  [
+                                   {
+                                       "sku_id":  "SKU-0001",
+                                       "name":  "Amul Taaza Toned Milk 500 ml Pouch",
+                                       "observations":  18,
+                                       "in_stock":  17,
+                                       "osa_pct":  94.44
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0002",
+                                       "name":  "Britannia Brown Bread 400g",
+                                       "observations":  18,
+                                       "in_stock":  18,
+                                       "osa_pct":  100.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0003",
+                                       "name":  "Maggi 2-Minute Noodles 280g",
+                                       "observations":  21,
+                                       "in_stock":  16,
+                                       "osa_pct":  76.19
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0004",
+                                       "name":  "Tata Salt 1kg",
+                                       "observations":  21,
+                                       "in_stock":  16,
+                                       "osa_pct":  76.19
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0005",
+                                       "name":  "Aashirvaad Atta 5kg",
+                                       "observations":  18,
+                                       "in_stock":  16,
+                                       "osa_pct":  88.89
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0006",
+                                       "name":  "Fortune Sunflower Oil 1L",
+                                       "observations":  12,
+                                       "in_stock":  9,
+                                       "osa_pct":  75.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0007",
+                                       "name":  "Amul Butter 100g",
+                                       "observations":  21,
+                                       "in_stock":  18,
+                                       "osa_pct":  85.71
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0008",
+                                       "name":  "Parle-G Biscuits 800g",
+                                       "observations":  18,
+                                       "in_stock":  18,
+                                       "osa_pct":  100.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0009",
+                                       "name":  "Surf Excel Easy Wash 1kg",
+                                       "observations":  18,
+                                       "in_stock":  16,
+                                       "osa_pct":  88.89
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0010",
+                                       "name":  "Colgate Strong Teeth 200g",
+                                       "observations":  18,
+                                       "in_stock":  15,
+                                       "osa_pct":  83.33
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0011",
+                                       "name":  "Dettol Handwash 200ml",
+                                       "observations":  18,
+                                       "in_stock":  18,
+                                       "osa_pct":  100.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0012",
+                                       "name":  "Lays Classic Salted 52g",
+                                       "observations":  24,
+                                       "in_stock":  22,
+                                       "osa_pct":  91.67
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0013",
+                                       "name":  "Coca-Cola 750ml",
+                                       "observations":  12,
+                                       "in_stock":  12,
+                                       "osa_pct":  100.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0014",
+                                       "name":  "Bisleri Water 1L",
+                                       "observations":  18,
+                                       "in_stock":  17,
+                                       "osa_pct":  94.44
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0015",
+                                       "name":  "Haldiram Bhujia 200g",
+                                       "observations":  18,
+                                       "in_stock":  17,
+                                       "osa_pct":  94.44
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0016",
+                                       "name":  "Nescafe Classic 50g",
+                                       "observations":  24,
+                                       "in_stock":  22,
+                                       "osa_pct":  91.67
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0017",
+                                       "name":  "Tata Tea Gold 500g",
+                                       "observations":  24,
+                                       "in_stock":  21,
+                                       "osa_pct":  87.5
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0018",
+                                       "name":  "Kissan Ketchup 950g",
+                                       "observations":  18,
+                                       "in_stock":  16,
+                                       "osa_pct":  88.89
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0019",
+                                       "name":  "Mother Dairy Curd 400g",
+                                       "observations":  24,
+                                       "in_stock":  20,
+                                       "osa_pct":  83.33
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0020",
+                                       "name":  "Epigamia Greek Yogurt 90g",
+                                       "observations":  24,
+                                       "in_stock":  18,
+                                       "osa_pct":  75.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0021",
+                                       "name":  "Onion 1kg",
+                                       "observations":  21,
+                                       "in_stock":  20,
+                                       "osa_pct":  95.24
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0022",
+                                       "name":  "Tomato 500g",
+                                       "observations":  15,
+                                       "in_stock":  13,
+                                       "osa_pct":  86.67
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0023",
+                                       "name":  "Banana Robusta 6pc",
+                                       "observations":  18,
+                                       "in_stock":  16,
+                                       "osa_pct":  88.89
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0024",
+                                       "name":  "Potato 1kg",
+                                       "observations":  18,
+                                       "in_stock":  17,
+                                       "osa_pct":  94.44
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0025",
+                                       "name":  "Eggs Farm Fresh 6pc",
+                                       "observations":  24,
+                                       "in_stock":  21,
+                                       "osa_pct":  87.5
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0026",
+                                       "name":  "Paneer Amul 200g",
+                                       "observations":  18,
+                                       "in_stock":  17,
+                                       "osa_pct":  94.44
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0027",
+                                       "name":  "Dove Soap 3x100g",
+                                       "observations":  21,
+                                       "in_stock":  18,
+                                       "osa_pct":  85.71
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0028",
+                                       "name":  "Harpic Toilet Cleaner 500ml",
+                                       "observations":  18,
+                                       "in_stock":  17,
+                                       "osa_pct":  94.44
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0029",
+                                       "name":  "Vim Dishwash Gel 250ml",
+                                       "observations":  12,
+                                       "in_stock":  11,
+                                       "osa_pct":  91.67
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0030",
+                                       "name":  "Pampers Pants M 20pc",
+                                       "observations":  18,
+                                       "in_stock":  18,
+                                       "osa_pct":  100.0
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0031",
+                                       "name":  "Real Mixed Fruit Juice 1L",
+                                       "observations":  21,
+                                       "in_stock":  19,
+                                       "osa_pct":  90.48
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0032",
+                                       "name":  "Kurkure Masala Munch 90g",
+                                       "observations":  24,
+                                       "in_stock":  22,
+                                       "osa_pct":  91.67
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0033",
+                                       "name":  "Cadbury Dairy Milk Silk 60g",
+                                       "observations":  15,
+                                       "in_stock":  14,
+                                       "osa_pct":  93.33
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0034",
+                                       "name":  "Red Bull 250ml",
+                                       "observations":  15,
+                                       "in_stock":  13,
+                                       "osa_pct":  86.67
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0035",
+                                       "name":  "Too Yumm Multigrain Chips 54g",
+                                       "observations":  21,
+                                       "in_stock":  20,
+                                       "osa_pct":  95.24
+                                   },
+                                   {
+                                       "sku_id":  "SKU-0036",
+                                       "name":  "Sprite 750ml",
+                                       "observations":  24,
+                                       "in_stock":  20,
+                                       "osa_pct":  83.33
+                                   }
+                               ],
+                      "status":  "ok"
+                  }
+}

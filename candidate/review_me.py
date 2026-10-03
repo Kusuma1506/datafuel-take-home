@@ -37,7 +37,9 @@ def fetch_inventory(store_id, as_of, cursor="0", results=None):
                 raise ValueError(f"request failed with HTTP {r.status_code}")
             r.raise_for_status()
             break
-        except (requests.RequestException, ValueError):
+        except ValueError:
+            raise
+        except requests.RequestException:
             if attempt == 5:
                 raise
             time.sleep(min(2 ** attempt, 10))

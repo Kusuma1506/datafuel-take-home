@@ -80,3 +80,11 @@ def test_invalid_city_returns_400():
     response = client.get("/osa?city=Paris")
     assert response.status_code == 400
     assert "city must be one of" in response.json()["detail"]
+
+
+def test_non_zero_padded_date_returns_400():
+    client = TestClient(app)
+    response = client.get("/osa?city=Mumbai&date=2026-9-8")
+
+    assert response.status_code == 400
+    assert response.json()["detail"] == "date must be YYYY-MM-DD"

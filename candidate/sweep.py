@@ -44,10 +44,12 @@ def get_conn(db_path: str = "osa.db") -> sqlite3.Connection:
     return conn
 
 
-def request_json(session: requests.Session, url: str, params: Optional[Dict[str, Any]] = None, timeout: float = 5.0) -> Tuple[Optional[dict], Optional[str]]:
+def request_json(session: requests.Session, url: str, params: Optional[Dict[str, Any]] = None, timeout: float = 5.0, pacer: Optional[Pacer] = None) -> Tuple[Optional[dict], Optional[str]]:
     params = params or {}
+    pacer = pacer or Pacer()
     last_reason = "unknown"
     for attempt in range(1, 6):
+        pacer.wait()
         try:
             response = session.get(url, params=params, headers=HEADERS, timeout=timeout)
         except requests.RequestException as exc:
@@ -75,12 +77,12 @@ def request_json(session: requests.Session, url: str, params: Optional[Dict[str,
     return None, f"gave up after 5 attempts ({last_reason})"
 
 
-def fetch_store_list() -> List[dict]:
-    session = requests.Session()
+def fetch_store_list(session: Optional[requests.Session] = None, pacer: Optional[Pacer] = None) -> List[dict]:
+    session = session or requests.Session()
     stores: List[dict] = []
     page = 1
     while True:
-        body, error = request_json(session, f"{PORTAL}/v1/stores", {"page": page})
+        body, error = request_json(session, f"{PORTAL}/v1/stores", {"page": page}, pacer=pacer)
         if error:
             raise RuntimeError(f"could not load store roster: {error}")
         stores.extend(body.get("stores", []))
@@ -121,8 +123,7 @@ def fetch_store_inventory(session: requests.Session, pacer: Pacer, store_id: str
     soft_ban_count = 0
 
     for page in range(1, 51):
-        pacer.wait()
-        body, error = request_json(session, f"{PORTAL}/v1/stores/{store_id}/inventory", {"as_of": as_of_utc, "cursor": cursor})
+        body, error = request_json(session, f"{PORTAL}/v1/stores/{store_id}/inventory", {"as_of": as_of_utc, "cursor": cursor}, pacer=pacer)
         if error:
             return "incomplete", error, []
 
@@ -233,12 +234,12 @@ def run_sweep(as_of: str, db_path: str = "osa.db") -> Tuple[int, int, List[str]]
     as_of = canonical_as_of(as_of)
     conn = get_conn(db_path)
     start = time.monotonic()
-    store_rows = fetch_store_list()
+    session = requests.Session()
+    pacer = Pacer(rate=2.0)
+    store_rows = fetch_store_list(session, pacer)
     tracked = save_store_list(conn, store_rows)
     set_sweep_record(conn, as_of)
 
-    session = requests.Session()
-    pacer = Pacer(rate=2.0)
     complete = 0
     incomplete = []
 

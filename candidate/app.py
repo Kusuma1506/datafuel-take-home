@@ -147,7 +147,10 @@ def osa(city: str, date: Optional[str] = None):
         date_value = dt.date().isoformat()
     else:
         try:
-            date_value = datetime.strptime(date, "%Y-%m-%d").date().isoformat()
+            parsed_date = datetime.strptime(date, "%Y-%m-%d").date()
+            date_value = parsed_date.isoformat()
+            if date_value != date:
+                raise ValueError("date must be zero-padded")
         except ValueError as exc:
             raise HTTPException(status_code=400, detail="date must be YYYY-MM-DD") from exc
 
